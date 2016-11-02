@@ -1,0 +1,9 @@
+HBITMAP bmp;
+HINSTANCE hinstance;
+hinstance = ::AfxGetInstanceHandle();
+bmp = ::LoadBitmap(hinstance,"IDB_BITMAP1");
+m_btn.SetBitmap(bmp);
+
+HICON hicon;
+hicon = AfxGetApp()->LoadIcon(IDI_ICON1);
+m_btn2.SetIcon(hicon);
